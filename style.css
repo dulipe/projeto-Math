@@ -13,12 +13,75 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Kurale', serif;
-    font-size: 20px;
-    background-color: #00c0ff;
+    font-size: 30px;
+    background-image: url(./numeros4.jpg);
+    
+    color: white;
 }
 
 section {
-    padding: 5rem;
-    border: 3px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border: 3px solid rgb(236, 233, 233);
     margin: 20px;
+    background-image: linear-gradient(to bottom, blue, black);
+    
+    
+}
+
+p {
+    margin-bottom: 50px;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 5vh;
+    border: 2px solid black;
+    text-align: center;
+}
+
+input#math-pow, input#math-pow2 {
+    width: 100px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+div#input {
+    display: flex;
+}
+
+button {
+    width: 10em;
+    margin-top: 5%;
+    border: 2px solid black;
+    background-image: linear-gradient(to top, blue, black);
+    color: white;
+}
+
+button:hover {
+    border: 2px solid rgb(241, 237, 237);
+}
+
+/* Responsividade */
+
+@media screen and (max-width:700px){
+    section {
+        font-size: 20px;
+        width: 80%;
+        
+    }
+
+    input {
+        width: 200px;
+    }
+
+    button {
+        width: 200px;
+    }
+
 }
