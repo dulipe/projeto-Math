@@ -6,7 +6,7 @@ const btn1 = document.getElementById('btn1')
 
 function round() {
     let inteiro = Math.round(mathRound.value)
-    res1.innerHTML = `<p>O numero arredondado é ${inteiro}</p>`
+    res1.innerHTML = `<p>O numero arredondado é <strong>${inteiro}</strong></p>`
 }
 
 btn1.addEventListener('click', round)
@@ -19,7 +19,7 @@ const res2 = document.getElementById('res2')
 
 function pow() {
     let potencia = Math.pow(n1.value,n2.value)
-    res2.innerHTML = `A potencia de ${n1.value} elevado a ${n2.value} é ${potencia}`
+    res2.innerHTML = `A potencia de ${n1.value} elevado a ${n2.value} é <strong>${potencia}</strong>`
 }
 
 btn2.addEventListener('click', pow)
@@ -33,7 +33,7 @@ function circulo() {
     let circunferencia = 2 * Math.PI * (raio.value)
     let area = Math.PI * Math.pow(raio.value,2)
 
-    res3.innerHTML = `A circunferencia de ${raio.value} é ${circunferencia} <br> e a area de ${raio.value} é ${area}`
+    res3.innerHTML = `A circunferencia de ${raio.value} é <strong>${circunferencia}</strong> <br> e a area de ${raio.value} é <strong>${area}</strong>`
 }
 
 btn3.addEventListener('click', circulo)
@@ -48,7 +48,7 @@ function area() {
     let areaTotal = areaBase * 6
     let volume = Math.pow(cubo.value,3)
 
-    res4.innerHTML = `A area base de ${cubo.value} é ${areaBase} <br> A area total  de ${cubo.value} é ${areaTotal} <br> O volume do cubo de ${cubo.value} é ${volume}`
+    res4.innerHTML = `A area base de ${cubo.value} é <strong>${areaBase}</strong> <br> A area total  de ${cubo.value} é <strong>${areaTotal}</strong> <br> O volume do cubo de ${cubo.value} é <strong>${volume}</strong>`
 }
 
 btn4.addEventListener('click', area)
@@ -61,7 +61,7 @@ const res5 = document.getElementById('res5')
 function raizQuadrada() {
     let num = Math.sqrt(raiz.value)
 
-    res5.innerHTML = `A raiz quadrada de ${raiz.value} é ${num}`
+    res5.innerHTML = `A raiz quadrada de ${raiz.value} é <strong>${num}</strong>`
 }
 
 btn5.addEventListener('click', raizQuadrada)

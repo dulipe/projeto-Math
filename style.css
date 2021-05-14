@@ -1,6 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kurale', serif;
+    font-size: 20px;
+    background-color: #00c0ff;
+}
+
+section {
+    padding: 5rem;
+    border: 3px solid;
+    margin: 20px;
+}
